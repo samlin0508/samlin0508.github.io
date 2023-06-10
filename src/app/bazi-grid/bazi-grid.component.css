@@ -1,0 +1,35 @@
+.bazi-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.bazi-container .bazi-element-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .bazi-container .bazi-element-container .bazi-element {
+    padding: 10px;
+    font-size: medium;
+    width: 20px;
+    margin: 1px;
+    cursor: pointer;
+} */
+
+.bazi-container .bazi-element-container .bazi-element,
+.bazi-container .bazi-element-container .gender {
+    height: 42px;
+    margin: 1px;
+    padding: 3px;
+}
+
+.bazi-container .bazi-element-container .explore {
+    height: 42px;
+    margin: 1px;
+    cursor: pointer;
+}

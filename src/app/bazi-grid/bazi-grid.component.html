@@ -1,0 +1,75 @@
+<div class="bazi-container">
+    <div class="bazi-element-container">
+        <label>男/女</label>
+        <select class="gender" [(ngModel)]="parent.baZiGrid.gender">
+            <option [ngValue]="0">男</option>
+            <option [ngValue]="1">女</option>
+        </select>
+        <button class="explore start-explore" mat-icon-button matTooltip="點擊批命" (click)="explore()">
+            <mat-icon class="start-explore">insights</mat-icon>
+        </button>
+    </div>
+    <div class="bazi-element-container">
+        <label>時</label>
+        <select class="bazi-element" [(ngModel)]="parent.baZiGrid.baZiGridInTianGan.elementInHourOfBirth">
+            <option *ngFor="let elementName of elementNamesInTianGan" [ngValue]="elementName">{{elementName}}</option>
+        </select>
+        <select class="bazi-element" [(ngModel)]="parent.baZiGrid.baZiGridInDiZhi.elementInHourOfBirth">
+            <option *ngFor="let elementName of elementNamesInDiZhi" [ngValue]="elementName">{{elementName}}</option>
+        </select>
+    </div>
+    <div class="bazi-element-container">
+        <label>日</label>
+        <select class="bazi-element" [(ngModel)]="parent.baZiGrid.baZiGridInTianGan.elementInDayOfBirth">
+            <option *ngFor="let elementName of elementNamesInTianGan" [ngValue]="elementName">{{elementName}}</option>
+        </select>
+        <select class="bazi-element" [(ngModel)]="parent.baZiGrid.baZiGridInDiZhi.elementInDayOfBirth">
+            <option *ngFor="let elementName of elementNamesInDiZhi" [ngValue]="elementName">{{elementName}}</option>
+        </select>
+    </div>
+    <div class="bazi-element-container">
+        <label>月</label>
+        <select class="bazi-element" [(ngModel)]="parent.baZiGrid.baZiGridInTianGan.elementInMonthOfBirth">
+            <option *ngFor="let elementName of elementNamesInTianGan" [ngValue]="elementName">{{elementName}}</option>
+        </select>
+        <select class="bazi-element" [(ngModel)]="parent.baZiGrid.baZiGridInDiZhi.elementInMonthOfBirth">
+            <option *ngFor="let elementName of elementNamesInDiZhi" [ngValue]="elementName">{{elementName}}</option>
+        </select>
+    </div>
+    <div class="bazi-element-container">
+        <label>年</label>
+        <select class="bazi-element" [(ngModel)]="parent.baZiGrid.baZiGridInTianGan.elementInYearOfBirth">
+            <option *ngFor="let elementName of elementNamesInTianGan" [ngValue]="elementName">{{elementName}}</option>
+        </select>
+        <select class="bazi-element" [(ngModel)]="parent.baZiGrid.baZiGridInDiZhi.elementInYearOfBirth">
+            <option *ngFor="let elementName of elementNamesInDiZhi" [ngValue]="elementName">{{elementName}}</option>
+        </select>
+    </div>
+    <div class="bazi-element-container">
+        <label>大運</label>
+        <select class="bazi-element" [(ngModel)]="parent.baZiGrid.baZiGridInTianGan.elementInDecade">
+            <option *ngFor="let elementName of elementNamesInTianGan" [ngValue]="elementName">{{elementName}}</option>
+        </select>
+        <select class="bazi-element" [(ngModel)]="parent.baZiGrid.baZiGridInDiZhi.elementInDecade">
+            <option *ngFor="let elementName of elementNamesInDiZhi" [ngValue]="elementName">{{elementName}}</option>
+        </select>
+    </div>
+    <div class="bazi-element-container">
+        <label>流年</label>
+        <select class="bazi-element" [(ngModel)]="parent.baZiGrid.baZiGridInTianGan.elementInYear">
+            <option *ngFor="let elementName of elementNamesInTianGan" [ngValue]="elementName">{{elementName}}</option>
+        </select>
+        <select class="bazi-element" [(ngModel)]="parent.baZiGrid.baZiGridInDiZhi.elementInYear">
+            <option *ngFor="let elementName of elementNamesInDiZhi" [ngValue]="elementName">{{elementName}}</option>
+        </select>
+    </div>
+    <div class="bazi-element-container">
+        <label>流月</label>
+        <select class="bazi-element" [(ngModel)]="parent.baZiGrid.baZiGridInTianGan.elementInMonth">
+            <option *ngFor="let elementName of elementNamesInTianGan" [ngValue]="elementName">{{elementName}}</option>
+        </select>
+        <select class="bazi-element" [(ngModel)]="parent.baZiGrid.baZiGridInDiZhi.elementInMonth">
+            <option *ngFor="let elementName of elementNamesInDiZhi" [ngValue]="elementName">{{elementName}}</option>
+        </select>
+    </div>
+</div>

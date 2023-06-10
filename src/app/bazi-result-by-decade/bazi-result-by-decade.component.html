@@ -1,0 +1,30 @@
+<div echarts [options]="optionsOfTianGan" theme="macarons" class="line-chart" (chartClick)="onChartEventOfTianGan($event, 'chartClick')"></div>
+<mat-accordion multi>
+    <mat-expansion-panel class="graph-chart-expansion-panel">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                天干五行流通
+            </mat-panel-title>
+            <mat-panel-description>
+                點擊檢視五行流通狀況
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+
+        <div echarts [options]="optionsOfWuXingShengKeInTianGan" theme="macarons" class="graph-chart"  (chartInit)="onGraphChartIntanceOfTianGanInit($event)"></div>
+    </mat-expansion-panel>
+</mat-accordion>
+<div echarts [options]="optionsOfDiZhi" theme="macarons" class="line-chart" (chartClick)="onChartEventOfDiZhi($event, 'chartClick')"></div>
+<mat-accordion multi>
+    <mat-expansion-panel class="graph-chart-expansion-panel">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                地支五行流通
+            </mat-panel-title>
+            <mat-panel-description>
+                點擊檢視五行流通狀況
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+
+        <div echarts [options]="optionsOfWuXingShengKeInDiZhi" theme="macarons" class="graph-chart" (chartInit)="onGraphChartIntanceOfDiZhiInit($event)"></div>
+    </mat-expansion-panel>
+</mat-accordion>
